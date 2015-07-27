@@ -3,6 +3,10 @@ div,h1,h2,h3,h4,span,a,p,img,body {
   padding: 0;
 }
 
+h1 {
+  letter-spacing: 1px;
+}
+
 .nav {
   font-family: 'Lato';
   color: white;
@@ -30,6 +34,7 @@ div,h1,h2,h3,h4,span,a,p,img,body {
 
 .header-link {
   text-decoration: none;
+  letter-spacing: 2px;
   color: white;
   padding-bottom: 12px;
 }
@@ -39,10 +44,10 @@ div,h1,h2,h3,h4,span,a,p,img,body {
 }
 
 .padding {
-  height: 60px;
+  height: 20px;
 }
 .about {
-  width: 600px;
+  width: 630px;
   float: right;
   display: block;
 }
@@ -55,6 +60,10 @@ div,h1,h2,h3,h4,span,a,p,img,body {
   margin-right: auto;
   padding: 20px;
   font-family: 'Lato';
+}
+
+.text-content {
+  
 }
 
 .joe-pic {
