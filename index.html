@@ -45,8 +45,20 @@
 
         <br>
         <p class="text-content">
-          I spent some time auditing the major mortgage servicers, working for a District Attorney's
+          I spent some time auditing the major mortgage servicers, working for
+          a District Attorney's
           office, hiking, sustainable farming, and reading Kant.
+        </p>
+        <p>
+          While my serious interest in the field has only just begun, I have known
+          that I had a propensity for software development since highschool,
+          where I took Java and C++ classes and tried to sell TI-83 programs to
+          my peers in math class.
+        </p>
+        <p>
+          Since starting my days as a developer (about 4 months ago), I have learned
+          quite a bit. My goal now is to find a company where I can grow as a
+          developer, and learn new skills.
         </p>
       </div>
       <a name="resume"></a>
@@ -54,12 +66,13 @@
         <h1>Resume</h1>
         <hr class="hr">
         <br>
-        <embed src="images/JoeDalyResume.pdf" width="760" height="963" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+        <embed src="images/JoeDalyResume.pdf" width="760" height="963" alt="pdf"
+          pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
       </div>
 
       <a name="portfolio"></a>
       <div class="content-box">
-        <h1>Portfolio</h1>
+        <h1>Selected Works</h1>
         <hr class="hr">
         <br>
         <div class="portfolio-cover">
@@ -81,9 +94,15 @@
           <img class="portfolio-piece towers" src="images/towers.png" alt="" />
         </div>
       </div>
+      <a name="contact"></a>
+      <div class="content-box">
+        <h1>Contact Info and Links</h1>
+        <hr class="hr">
+      </div>
     </div>
     <div class="footer">
     </div>
+
 
     <div id="chessModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
@@ -92,47 +111,159 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Upload a Book</h4>
+            <h4 class="modal-title">JQuery Chess</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              JQuery Chess is a JavaScript Chess game that utilizes JQuery to create and
+              manipulate DOM elements to graphically represent the game. This implementation,
+              like my implementation of Asteroids, was an exercise in
+              Object Oriented JavaScript following the prototype-oriented model
+              and makes extensive use of prototypal inheritance.
+            </p>
+            <p>
+              At present, JQuery Chess only supports two player games. Stay tuned
+              for a computer AI. I should implement it in the next few days.
+            </p>
+            <span><a href="https://github.com/josefdaly/JQuery-Chess">Github</a></span>
+            <br>
+            <span><a href="http://josefdaly.github.io/JQuery-Chess/">Live</a></span>
           </div>
 
-        <div class="modal-body form">
-        <span class="title-error"></span>
-        <div class="form-group">
-          <input class="form-control book-title" placeholder="Book Title">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default center-block"
+              data-dismiss="modal">Close</button>
+          </div>
         </div>
-
-        <div class="form-group">
-          <textarea class="form-control description" placeholder="Book Description"></textarea>
-        </div>
-        <span class="doc-url-error"></span>
-        <div class="form-group">
-          <label for="exampleInputFile">Book File</label> <br>
-          <button class="upload-file" type='file'>Choose File</button>
-          <span class="book-file-name">No file chosen</span>
-          <p class="help-block">At this time, readMe only supports .epub files</p>
-        </div>
-
-        <div class="form-group">
-          <label for="exampleInputFile">Cover Image</label> <br>
-          <button class="upload-cover" type='file'>Choose File</button>
-          <span class="cover-file-name">No file chosen</span>
-          <p class="help-block">readMe supports .jpg, .png, and .gif files</p>
-        </div>
-      </div>
-
-      <div class="modal-footer">
-        <button type="submit"
-          class="center-block create-book btn btn-default">Submit</button>
       </div>
     </div>
 
-  </div>
-</div>
+    <div id="readmeModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">ReadMe</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              ReadMe is a full-stack web app with a Backbone.js front-end that consumes
+              a RESTful Rails API serving models in JSON. ReadMe's primary purpose
+              is to allow users to upload, read, and rate EPub files.
+            </p>
+            <p>
+              My favorite part of ReadMe is the e-reader, which allows a user to
+              read any uploaded epub (preferably one that they wrote themselves).
+              The reader was built using the JavaScript library
+              <a href="https://github.com/futurepress/epub.js/">EPub.js</a> by
+              Future Press.
+            </p>
+            <p>
+              As ReadMe is mostly a demonstration application, the library, while
+              intended for independent publishing, is seeded with great works by
+              writers who are long dead (along with their proprietary ownership
+              over their works.) Feel free to log in and read, rate, and upload
+              your own books. A guest account feature is provided on the log in page
+              for your convenience.
+            </p>
+            <span><a href="https://github.com/josefdaly/ReadMeApp">Github</a></span>
+            <br>
+            <span><a href="http://www.try-read.me">Live</a></span>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default center-block"
+              data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="asteroidsModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Asteroids</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Asteroids is a JavaScript game inspired by the arcade classic of the
+              same name. The game is rendered on an HTML5 canvas and uses JQuery
+              to update the scoreboard. This implementation was an exercise in
+              Object Oriented JavaScript following the prototype-oriented model
+              and makes extensive use of prototypal inheritance.
+            </p>
+            <p>
+              Unlike the original game, this Asteroids uses the modern
+              WASD/Mouse control scheme.
+            </p>
+            <span><a href="https://github.com/josefdaly/asteroids">Github</a></span>
+            <br>
+            <span><a href="http://josefdaly.github.io/asteroids/">Live</a></span>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default center-block"
+              data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <div id="towersModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Towers of Hanoi</h4>
+              </div>
+              <div class="modal-body">
+                <p>
+                  This implementation of Towers of Hanoi was one of my first
+                  exercises in JQuery. The goal of the game is to move all of the
+                  discs from one pile to another. The only restriction is that you
+                  cannot place a larger disc atop a smaller disc.
+                </p>
+                <span><a href="https://github.com/josefdaly/JQuery-Towers">Github</a></span>
+                <br>
+                <span><a href="http://josefdaly.github.io/JQuery-Towers/">Live</a></span>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default center-block"
+                  data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
     <script type="text/javascript">
       $(".chess").on({
         click: function () {
           $('#chessModal').modal('toggle');
+        }
+      });
+      $(".readme").on({
+        click: function () {
+          $('#readmeModal').modal('toggle');
+        }
+      });
+      $(".asteroids").on({
+        click: function () {
+          $('#asteroidsModal').modal('toggle');
+        }
+      });
+      $(".towers").on({
+        click: function () {
+          $('#towersModal').modal('toggle');
         }
       });
     </script>
