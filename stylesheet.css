@@ -1,10 +1,16 @@
-div,h1,h2,h3,h4,span,a,p,img,body {
-  margin: 0;
+div,hr,h1,h2,h3,h4,span,a,p,img,body {
+  margin: 0 0 0 0;
   padding: 0;
 }
 
 h1 {
   letter-spacing: 1px;
+}
+
+.hr {
+    border: 0;
+    height: 1px;
+    background: black;
 }
 
 .nav {
@@ -36,18 +42,20 @@ h1 {
   text-decoration: none;
   letter-spacing: 2px;
   color: white;
-  padding-bottom: 12px;
+  padding-bottom: 7px;
 }
 
 .header-link:hover {
-  border-bottom: 4px solid white;
+  border-bottom: 3px solid white;
+  text-decoration: none;
+  color: white;
 }
 
 .padding {
   height: 20px;
 }
 .about {
-  width: 630px;
+  width: 595px;
   float: right;
   display: block;
 }
@@ -63,7 +71,7 @@ h1 {
 }
 
 .text-content {
-  
+  margin-top: 10px;
 }
 
 .joe-pic {
@@ -74,4 +82,20 @@ h1 {
   display: block;
   position: absolute;
   top: 20px;*/
+}
+
+.p1 {
+  margin: 0 0 0 0;
+}
+
+.portfolio-cover {
+  background: black;
+  width: 760px;
+  height: 400px;
+  background: black;
+  overflow: hidden;
+}
+
+.portfolio-piece:hover {
+  opacity: .6;
 }
