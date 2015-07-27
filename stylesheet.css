@@ -94,8 +94,17 @@ h1 {
   height: 400px;
   background: black;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .portfolio-piece:hover {
   opacity: .6;
+  cursor: pointer;
+}
+
+.portfolio-cover:hover {
+}
+
+embed {
+  background: white;
 }
