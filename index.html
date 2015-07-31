@@ -89,6 +89,11 @@
         <div class="padding">
         </div>
         <div class="portfolio-cover">
+          <img class="portfolio-piece note-taker" src="images/notetaker.png" alt="" />
+        </div>
+        <div class="padding">
+        </div>
+        <div class="portfolio-cover">
           <img class="portfolio-piece chess" src="images/chess.png" alt="" />
         </div>
         <div class="padding">
@@ -106,6 +111,7 @@
         <div class="portfolio-cover">
           <img class="portfolio-piece ruby-chess" src="images/ruby-chess.png" alt="" />
         </div>
+
       </div>
     </div>
     <div class="footer">
@@ -284,6 +290,35 @@
             </div>
           </div>
         </div>
+
+        <div id="notetakerModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Note Taker</h4>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Note Taker is a notes/todo list app inspired by Trello. It is a fullstack
+                  app built back to front in Rails and Backbone.
+                </p>
+                <p>
+                  Note Taker has not been deployed yet, but will be shortly. Feel
+                  free to visit the Github.
+                </p>
+                <span><a href="https://github.com/josefdaly/note-taker">Github</a></span>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default center-block"
+                  data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
     <script type="text/javascript">
       $(".chess").on({
         click: function () {
@@ -310,7 +345,11 @@
           $('#rubychessModal').modal('toggle');
         }
       });
-      $(".about")
+      $(".note-taker").on({
+        click: function () {
+          $('#notetakerModal').modal('toggle');
+        }
+      })
     </script>
   </body>
 </html>
