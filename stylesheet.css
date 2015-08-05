@@ -80,6 +80,9 @@ h1 {
   height: 150px;
   width: 150px;
   border-radius: 100px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
   /*left: calc(50% - 300px);
   display: block;
   position: absolute;
