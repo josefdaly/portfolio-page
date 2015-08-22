@@ -17,7 +17,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="nav">
+    <nav>
       <span class="logo">
         Joseph<strong>Daly</strong>
       </span>
@@ -26,9 +26,9 @@
         <a class="header-link" href="#resume">Resume</a> |
         <a class="header-link" href="#portfolio">Portfolio</a>
       </span>
-    </div>
+    </nav>
     <div class="body">
-      <div class="padding">
+      <div class="big-padding">
       </div>
       <a name="about"></a>
       <div class=" content-box">
@@ -327,6 +327,29 @@
           </div>
         </div>
     <script type="text/javascript">
+      var didScroll;
+      var lastScrollTop = 0;
+
+      $(window).scroll(function(event){
+        didScroll = true;
+      });
+      // run hasScrolled() and reset didScroll status
+
+      setInterval(function() {
+        if (didScroll) {
+          var st = $(this).scrollTop();
+          if (st > lastScrollTop){
+            // downscroll code
+            $('nav').addClass('nav-up');
+          } else {
+            // upscroll code
+            $('nav').removeClass('nav-up');
+          }
+          lastScrollTop = st;
+          didScroll = false;
+        }
+      }, 125);
+
       $(".chess").on({
         click: function () {
           $('#chessModal').modal('toggle');

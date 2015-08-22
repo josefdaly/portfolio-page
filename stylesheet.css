@@ -13,13 +13,22 @@ h1 {
     background: black;
 }
 
-.nav {
+nav {
+  top: 0px;
   font-family: 'Lato';
   color: white;
   height: 70px;
   background-color: black;
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
   box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  transition: top 0.2s ease-in-out;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.nav-up {
+  top: -70px;
 }
 
 .logo {
@@ -35,9 +44,7 @@ h1 {
   position: relative;
   display: block;
   width: 100%;
-  overflow-Y: scroll;
-  height: calc(100vh - 70px);
-  background: #d3d3d3;
+  background: gray;
 }
 
 .header-link {
@@ -56,6 +63,11 @@ h1 {
 .padding {
   height: 20px;
 }
+
+.big-padding {
+  height: 90px;
+}
+
 .about {
   width: 595px;
   float: right;
